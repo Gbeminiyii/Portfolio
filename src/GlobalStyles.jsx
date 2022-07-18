@@ -67,7 +67,7 @@ export const GlobalStyles = createGlobalStyle`
     /* ======= SMALL DEVICES ======== */
     @media screen and (max-width: 750px) {
         body{
-            
+            overflow: hidden;
         }
     }
 `
