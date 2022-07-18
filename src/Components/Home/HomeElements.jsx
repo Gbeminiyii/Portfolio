@@ -1,23 +1,25 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 90vh;
+    min-height: 90vh;
     position: relative;
     padding: 0px 150px;
+    @media screen and (max-width: 1024px) {
+        //margin-bottom: 300px;
+    
+    }
     @media screen and (max-width: 750px) {
         padding: 0px 20px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
         overflow: hidden;
-    }
-    @media screen and (max-width: 1024px) {
-        //padding: 0px 100px;
-        margin-bottom: 30px;
     }
 `
 export const Wrapper = styled.div`
     height: 100%;
     margin-top: 85px;
-    
+    @media screen and (max-width: 1024px) {
+        padding-top: 40%;
+    }
 `
 export const Intro = styled.div`
     animation: fadeInright 1s;

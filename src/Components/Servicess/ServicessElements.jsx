@@ -7,11 +7,13 @@ export const Container = styled.div`
     margin-top: 0px;
     overflow: hidden;
     @media screen and (max-width: 750px) {
+        min-height: 100vh;
         padding: 0px 20px;
         margin-bottom: 0px;
     }
     @media screen and (max-width: 1024px) {
         margin-bottom: 100px;
+        min-height: 70vh;
     }
 `
 export const Wrapper = styled.div`

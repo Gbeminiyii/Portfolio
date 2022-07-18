@@ -56,7 +56,7 @@ const About = () => {
       }
       if(!inView){
         animateimage.start({
-            x: '200vw'
+            x: '100vw'
         })
       }
     });

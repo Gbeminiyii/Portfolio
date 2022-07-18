@@ -10,6 +10,7 @@ export const Container = styled.div`
     }
     @media screen and (max-width: 1024px) {
         margin-bottom: 30px;
+
     }
     
 `

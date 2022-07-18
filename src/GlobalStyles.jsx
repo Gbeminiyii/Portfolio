@@ -68,6 +68,19 @@ export const GlobalStyles = createGlobalStyle`
     @media screen and (max-width: 750px) {
         body{
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased
         }
+        ::-webkit-scrollbar{
+        display: none;
+    }
+    }
+    @media screen and (max-width: 1024px) {
+        body{
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased
+        }
+        ::-webkit-scrollbar{
+        display: none;
+    }
     }
 `

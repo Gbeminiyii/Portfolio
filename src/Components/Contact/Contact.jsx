@@ -4,11 +4,30 @@ import { FiLinkedin } from 'react-icons/fi'
 import { BsTwitter, BsDribbble } from 'react-icons/bs'
 import styled from 'styled-components'
 import { Header } from '../About/AboutElements'
-import { Container, Wrapper } from '../Servicess/ServicessElements'
 import { useInView } from 'react-intersection-observer'
 import { useAnimation } from 'framer-motion'
 import { motion } from 'framer-motion'
 
+
+const Container = styled.div`
+    min-height: 80vh;
+    position: relative;
+    padding: 0px 150px;
+    overflow: hidden;
+    @media screen and (max-width: 750px) {
+        padding: 0px 20px;
+        min-height: 50vh;
+    }
+    @media screen and (max-width: 1024px) {
+        min-height: 100vh;
+    }
+`
+const Wrapper = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+`
 const HeaderContainer = styled.ul`
     animation: fade 2500ms;
     @keyframes fade {
@@ -19,16 +38,14 @@ const HeaderContainer = styled.ul`
             opacity: 1;
         }
     }
-    position: fixed;
     flex-direction: row;
-    display: ${props => (props.Mobile ? 'flex':'none')};;
+    display: ${props => (props.Mobile ? 'flex':'none')};
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    margin-top: 100px;
     z-index: 10;
-    width: fit-content;
-    left: calc(50% - 100px);
-    bottom: 0px;
+    width: 100%;
     li{
         margin-bottom: 10px;
         width: 50px;
@@ -49,18 +66,21 @@ const HeaderContainer = styled.ul`
     }
     }
 `
-
 const Text = styled.div`
     display: flex;
     flex: 6;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 70px;
     @media screen and (max-width: 750px) {
+        margin-top: 70px;
+
+    }
+    @media screen and (max-width: 1024px) {
         margin-top: 70px;
     }
 `
-
 const First = styled.div`
     span{
         font-size: 42px;
@@ -82,7 +102,6 @@ const Desc = styled.div`
 `
 const Mail = styled.div`
     button{
-    margin-left: 40px;
     padding: 20px 39px;
     cursor: pointer;
     border-radius: 4px;
@@ -94,9 +113,9 @@ const Mail = styled.div`
         background-color: var(--green-tint);
         transition: all 200ms ease-in;
     }
+    
 }
 `
-
 const Contact = () => {
 
     const {ref, inView} = useInView()
@@ -152,12 +171,12 @@ const Contact = () => {
                 </Mail>
             </Text>
         </Wrapper>
-            <HeaderContainer Mobile={isMobile}>
+        <HeaderContainer Mobile={isMobile}>
                 <li><a href="https://github.com/Gbeminiyii"><FaGithub/></a></li>
                 <li><a href="https://www.linkedin.com/in/okunowo-gbeminiyi-9a32a4168/"><FiLinkedin/></a></li>
                 <li><a href="https://twitter.com/Gbemi_0k"><BsTwitter/></a></li>
                 <li><a href="https://Dribble.com"><BsDribbble/></a></li>
-            </HeaderContainer>
+        </HeaderContainer>
     </Container>
   )
 }
