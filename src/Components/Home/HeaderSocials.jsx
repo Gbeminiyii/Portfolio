@@ -50,9 +50,6 @@ const Container = styled.ul`
            color: var(--green);
         }
     }
-    @media screen and (max-width: 1024px){
-        //height: calc(100vh - 80px);
-    }
     }
 `
 
