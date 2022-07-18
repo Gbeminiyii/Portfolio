@@ -4,10 +4,6 @@ export const Container = styled.div`
     min-height: 90vh;
     position: relative;
     padding: 0px 150px;
-    @media screen and (max-width: 1024px) {
-        //margin-bottom: 300px;
-    
-    }
     @media screen and (max-width: 750px) {
         padding: 0px 20px;
         margin-bottom: 20px;
@@ -19,6 +15,9 @@ export const Wrapper = styled.div`
     margin-top: 85px;
     @media screen and (max-width: 1024px) {
         padding-top: 40%;
+    }
+    @media screen and (max-width: 750px) {
+        padding-top: 0%;
     }
 `
 export const Intro = styled.div`
