@@ -166,16 +166,16 @@ const Contact = () => {
                 </Desc>
                 <Mail>
                     <button>
-                        <a href='mailto:okunowogbemi@gmail.com'>Say Hello</a>
+                        <a target='_blank' rel='noreferrer' href='mailto:okunowogbemi@gmail.com'>Say Hello</a>
                     </button>
                 </Mail>
             </Text>
         </Wrapper>
         <HeaderContainer Mobile={isMobile}>
-                <li><a href="https://github.com/Gbeminiyii"><FaGithub/></a></li>
-                <li><a href="https://www.linkedin.com/in/okunowo-gbeminiyi-9a32a4168/"><FiLinkedin/></a></li>
-                <li><a href="https://twitter.com/Gbemi_0k"><BsTwitter/></a></li>
-                <li><a href="https://Dribble.com"><BsDribbble/></a></li>
+                <li><a target='_blank' rel='noreferrer' href="https://github.com/Gbeminiyii"><FaGithub/></a></li>
+                <li><a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/okunowo-gbeminiyi-9a32a4168/"><FiLinkedin/></a></li>
+                <li><a target='_blank' rel='noreferrer' href="https://twitter.com/Gbemi_0k"><BsTwitter/></a></li>
+                <li><a target='_blank' rel='noreferrer' href="https://Dribble.com"><BsDribbble/></a></li>
         </HeaderContainer>
     </Container>
   )

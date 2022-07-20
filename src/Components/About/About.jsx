@@ -86,7 +86,7 @@ const About = () => {
                 <Image as={motion.div}
                 ref={ref}
                 animate={animateimage}
-                ><img src={img} alt="" /></Image>
+                ><img src={img} alt="mypicture" /></Image>
             </Content>   
         </Wrapper>
     </Container>

@@ -57,7 +57,7 @@ const Mail = () => {
     }, []);
   return (
     <Container Mobile={isMobile}>
-        <div><a href="mailto:okunowogbemi@gmail.com">okunowogbemi@gmail.com</a></div>
+        <div><a target='_blank' rel='noreferrer' href="mailto:okunowogbemi@gmail.com">okunowogbemi@gmail.com</a></div>
     </Container>
   )
 }
