@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import CV from '../Gbeminiyi_Okunowo_CV (2).pdf'
+import CV from '../resume.pdf'
 import { FiMenu, FiX } from 'react-icons/fi'
 import { Button, Container, Item, Itemm, Itemmm, Itemmmm, Logo, MenuItems, Mobile, Nav, NavMenu, Wrapper } from './NavbarElements'
 
