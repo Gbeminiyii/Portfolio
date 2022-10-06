@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import CV from '../resume.pdf'
+//import CV from '../resume.pdf'
 import { FiMenu, FiX } from 'react-icons/fi'
 import { Button, Container, Item, Itemm, Itemmm, Itemmmm, Logo, MenuItems, Mobile, Nav, NavMenu, Wrapper } from './NavbarElements'
 
@@ -35,7 +35,7 @@ const Navbar = ( { Show } ) => {
                     <Itemmm><a href='#portfolio'>Portfolio</a></Itemmm>
                     <Itemmmm><a href='#contact'>Contact</a></Itemmmm>
                 </MenuItems>
-                <Button><a download={CV} href={CV}>Resume</a></Button>
+                <Button><a href="/">Resume</a></Button>
             </NavMenu>
         </Wrapper>
       <Mobile Mobile={isMobile}>
@@ -51,7 +51,7 @@ const Navbar = ( { Show } ) => {
               <li><a href='#portfolio'>Portfolio</a></li>
               <li><a href='#contact'>Contact</a></li>
             </ul>
-            <button><a download={CV} href={CV}>Resume</a></button>
+            <button><a href="/">Resume</a></button>
         </Nav>
       </Mobile>
     </Container>

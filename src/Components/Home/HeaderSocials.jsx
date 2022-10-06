@@ -67,9 +67,9 @@ const HeaderSocials = () => {
 
   return (
     <Container Mobile={isMobile}>
-        <li><a target='_blank' rel='noreferrer' href="https://github.com/Gbeminiyii"><FaGithub/></a></li>
-        <li><a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/okunowo-gbeminiyi-9a32a4168/"><FiLinkedin/></a></li>
-        <li><a target='_blank' rel='noreferrer' href="https://twitter.com/Gbemi_0k"><BsTwitter/></a></li>
+        <li><a target='_blank' rel='noreferrer' href="https://github.com"><FaGithub/></a></li>
+        <li><a target='_blank' rel='noreferrer' href="https://www.linkedin.com"><FiLinkedin/></a></li>
+        <li><a target='_blank' rel='noreferrer' href="https://twitter.com"><BsTwitter/></a></li>
         <li><a target='_blank' rel='noreferrer' href="https://Dribble.com"><BsDribbble/></a></li>
     </Container>
   )
